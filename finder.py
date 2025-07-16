@@ -26,18 +26,24 @@ def generate():
     # 🧠 Multimodal prompt combining video and image with question
     contents = [
         types.Content(
+                    role="user",
+                    parts=[
+                        types.Part.from_bytes(
+                            mime_type="video/mp4",
+                            data=video_bytes,
+                        )
+                    ],
+                ),
+
+        types.Content(
             role="user",
             parts=[
-                types.Part.from_bytes(
-                    mime_type="video/mp4",
-                    data=video_bytes,
-                ),
                 types.Part.from_bytes(
                     mime_type="image/jpeg",  # or "image/png" if needed
                     data=image_bytes,
                 ),
                 types.Part.from_text(
-                    text="Is this girl present anywhere in the video?"
+                    text="Is this person present anywhere in the video?"
                 ),
             ],
         ),
