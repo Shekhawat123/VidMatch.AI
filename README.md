@@ -17,5 +17,3 @@ python finder.py
 
 
 Ensure your media files and API key are correctly configured — see README.md for setup tips.
-
-If you'd like, I can help generate the full README.md with badges, setup instructions, and licensing. Want to give it a cool tagline or prep it for public visibility? I’m your wingman. 🛫
