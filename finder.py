@@ -14,7 +14,7 @@ def generate():
     model = "gemini-2.5-pro"
 
     # ✅ Load image bytes correctly
-    image_path = r"C:\Users\SANSHEKH\Downloads\imagedetection\girl.png"
+    image_path = r"C:\Users\SANSHEKH\Downloads\imagedetection\girl.jpg"
     with open(image_path, "rb") as img_file:
         image_bytes = img_file.read()
 
@@ -39,7 +39,7 @@ def generate():
             role="user",
             parts=[
                 types.Part.from_bytes(
-                    mime_type="image/jpeg",  # or "image/png" if needed
+                    mime_type="image/jpg",  # or "image/png" if needed
                     data=image_bytes,
                 ),
                 types.Part.from_text(
