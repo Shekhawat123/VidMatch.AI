@@ -14,12 +14,12 @@ def generate():
     model = "gemini-2.5-pro"
 
     # ✅ Load image bytes correctly
-    image_path = r"C:\VickyJD\Tools\imagedetection\video\girl.png"
+    image_path = r"C:\Users\SANSHEKH\Downloads\imagedetection\girl.png"
     with open(image_path, "rb") as img_file:
         image_bytes = img_file.read()
 
     # ✅ Load video bytes correctly
-    video_path = r"C:\VickyJD\Tools\imagedetection\video\dubai.mp4"
+    video_path = r"C:\Users\SANSHEKH\Downloads\imagedetection\dubai.mp4"
     with open(video_path, "rb") as vid_file:
         video_bytes = vid_file.read()
 
