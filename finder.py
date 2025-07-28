@@ -39,7 +39,7 @@ def generate():
             role="user",
             parts=[
                 types.Part.from_bytes(
-                    mime_type="image/jpg",  # or "image/png" if needed
+                    mime_type="image/jpeg",  # or "image/png" if needed
                     data=image_bytes,
                 ),
                 types.Part.from_text(
